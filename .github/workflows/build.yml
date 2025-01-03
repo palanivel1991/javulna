@@ -42,8 +42,8 @@ jobs:
 
       - name: SonarQube Analysis
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: sqp_f14ea207448c26c9105b8962148f4a92b16563d8
+          SONAR_HOST_URL: http://192.168.0.185:9000
         run: |
           echo "SonarQube Host URL: $SONAR_HOST_URL"  # To verify if the URL is correct
           mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
